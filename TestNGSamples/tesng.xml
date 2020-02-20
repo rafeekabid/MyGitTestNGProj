@@ -1,0 +1,56 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1"  >
+	<test name ="ChromTest">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes >
+			<class name="tests.CrossBrowserTest">
+				<methods>
+					<exclude name="CrossBrowserTestMethod"></exclude>
+				</methods>
+			</class>
+		</classes>		
+	</test>
+	<test name="IETest" >
+		<parameter name="browser" value="IE"/>
+		<classes>
+			<class name="tests.CrossBrowserTest">
+			<methods>
+					<exclude name="CrossBrowserTestMethod"></exclude>
+				</methods>			
+			</class>
+		</classes>
+	</test>
+	<!-- <test name="ParallelTesting" parallel="methods" thread-count="5" verbose="10" >
+		<classes>
+			<class name="tests.ParallelTest"></class>
+		</classes>	
+	</test> -->
+	<!-- <test name="DataProvideTesting">
+		<classes>
+			<class name="tests.DataProviderTest">
+			</class>
+		</classes>
+	</test> -->
+	
+	<!-- <test name="GroupsandPriority">
+	<groups>
+		<run>
+		<include name="smoketest"></include>
+		<include name="functionaltest"></include>
+		</run>
+	</groups>
+		<classes>
+			<class name="tests.GroupsandPriorityTest">
+				
+			</class>
+		</classes>
+	</test> -->
+	
+	<test name="Extentreports">
+		<classes>
+			<class name="tests.ExtentReport"></class>
+		</classes>
+	</test>
+</suite>

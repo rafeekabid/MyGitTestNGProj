@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browser" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.CrossBrowserTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="CrossBrowserTestMethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CrossBrowserTest -->
+      <class name="tests.ExtentReport">
+        <methods>
+          <include name="testMethod6"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- tests.ExtentReport -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

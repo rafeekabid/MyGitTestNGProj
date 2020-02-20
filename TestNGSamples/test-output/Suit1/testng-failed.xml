@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suit1]">
+  <test thread-count="5" name="ChromTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tests.CrossBrowser">
+        <methods>
+          <include name="testMethod4"/>
+          <include name="testMethod3"/>
+          <include name="setup"/>
+          <include name="testMethod5"/>
+          <include name="TearDown"/>
+          <include name="testMethod2"/>
+        </methods>
+      </class> <!-- tests.CrossBrowser -->
+    </classes>
+  </test> <!-- ChromTest(failed) -->
+  <test thread-count="5" name="IETest(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="tests.CrossBrowser">
+        <methods>
+          <include name="testMethod4"/>
+          <include name="testMethod3"/>
+          <include name="setup"/>
+          <include name="testMethod5"/>
+          <include name="TearDown"/>
+          <include name="testMethod2"/>
+        </methods>
+      </class> <!-- tests.CrossBrowser -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suit1] -->

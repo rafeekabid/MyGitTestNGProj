@@ -1,0 +1,3 @@
+tests\CrossBrowserTest.class
+tests\TestNGAnnotations.class
+tests\ParallelTest.class
